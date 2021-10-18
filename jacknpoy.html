@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jack n' Poy</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch&family=Press+Start+2P&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            background-color: rgb(15, 15, 15);
+        }
+        h1{
+            color:rgb(150, 192, 163);
+        }
+        .weaponSelect{
+            display:flex;
+            justify-content:center;
+            flex-wrap: wrap;
+        }
+        .weapon{
+            padding:20px;
+            border: solid black;
+            margin: 20px;
+            border-radius: 20px;
+            background-color:rgb(150, 192, 163);
+            transition: 0.5s;
+            
+           
+        }
+        .weapon h2{
+            text-align:center;
+        }
+
+        
+
+        h5,
+        #result , h2 , h1{
+            font-family: 'Cabin Sketch', cursive;
+            
+        }
+        
+
+        .weapon:hover {
+            
+            color: red;
+            cursor: pointer;
+            background-color:black;
+            color:white;
+            transform: scale(1.1);
+            box-shadow: 12px 12px 20px 1px rgba(253, 253, 253, 0.945);
+        }
+        
+        h5{
+          border-radius: 20px;
+          border: solid black;
+          padding:5px;
+          margin: 5px;
+        }
+        
+        #result{
+            
+            color:white;
+            border-radius: 5px;
+            translate:0.2s;
+            
+            box-shadow: 12px 12px 20px 1px rgba(253, 253, 253, 0.945);
+            
+        }
+        .score{
+            background-color: black;
+            color:white;
+            box-shadow: 12px 12px 20px 1px rgba(253, 253, 253, 0.945);
+        }
+        
+    </style>
+</head>
+
+<body>
+    <h1 class="has-text-centered is-size-1">ROCK, PAPER, SCISSORS</h1>
+    
+        <div class="columns">
+            <div class="column is-2 is-offset-5" >
+            <h5 class="score is-size-4 has-text-centered " >You:<span id="pScore"> 0</span></h5>
+            <h5 class="score is-size-4 has-text-centered">Computer:<span id="comScore"> 0</span></h5>
+        </div>
+        </div>
+        
+
+    <section class="weaponSelect">
+        <div class="weapon">
+            <div><i class="fas fa-hand-rock fas fa-10x is-large" id="rock"></i></div>
+            <h2>Rock</h2>
+        </div>
+        <div class="weapon">
+            <div><i class="far fa-paper-plane fas fa-10x  is-large" id="paper"></i></div>
+            <h2>Paper</h2>
+        </div>
+        <div class="weapon">
+            <div><i class="fas fa-cut fas fa-10x is-large" id="scissors"></i></div>
+            <h2>Scissors</h2>
+        </div>
+    </section>
+    <br>
+    <div class="columns " >
+        <div class="column is-4 is-offset-4">
+    <p id="result" class="has-text-centered is-size-3 "></p>
+</div>
+   </div>
+    <!-- <section class="section">
+        <!-- <div class="column is-three-fifths is-offset-one-fifth">
+            <div class="card">
+                <header class="card-header">
+                    <p class="card-header-title">
+                        Jack n' Poy
+                    </p>
+                    <button class="card-header-icon" aria-label="more options">
+                        <span class="icon">
+                            <i class="fas fa-angle-down" aria-hidden="true"></i>
+                        </span>
+                    </button>
+                </header>
+                <div class="card-content">
+                    <div class="content">
+                        <h5 class="is-size-1 has-text-success">You:<span id="pScore"> 0</span></h3>
+                            <h5 class="is-size-1 has-text-danger">Computer:<span id="comScore"> 0</span></h3>
+
+                                <!-- <div class="icon is-large">
+                                    <div class="column is-one-fifth"><i class="fas fa-hand-rock icon fas fa-10x box is-inline" id="rock"></i></div>
+                                    <div class="column is-one-fifth"><i class="far fa-paper-plane fas fa-10x box is-inline"></i></div>
+                                    <div class="column is-one-fifth"><i class="fas fa-cut fas fa-10x box is-inline"></i></div>
+
+                                </div> -->
+
+
+    <!-- <p id="result" class="has-text-centered is-size-1">Result</p>
+                    </div>
+                </div>
+                <footer class="card-footer">
+
+
+                    <i class="fas fa-hand-rock fas fa-10x  card-footer-item is-large box" id="rock"></i>
+                    <i class="far fa-paper-plane fas fa-10x  card-footer-item is-large" id="paper"></i>
+                    <i class="fas fa-cut fas fa-10x  card-footer-item is-large" id="scissors"></i> -->
+
+    <!-- <button id='paper'
+                        class="button is-info  is-rounded card-footer-item is-large"><i class="far fa-paper-plane fas fa-10x "></i></button>
+                    <button id='scissors'
+                        class="button is-link is-rounded card-footer-item is-large"><i class="fas fa-cut fas fa-10x "></i></button> -->
+    <!-- </footer>
+            </div>
+        </div>
+    </section>
+ -->
+
+
+
+    <script src="https://kit.fontawesome.com/6fcf0d92db.js" crossorigin="anonymous"></script>
+    <script src="jacknpoy.js"></script>
+</body>
+
+</html>
